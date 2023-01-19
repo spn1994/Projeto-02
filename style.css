@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+/* vai mudando cor */
+  min-height: 100vh; /* propiedade de aktura, ocupando tudo, vh é viewporthight */
+}
+
+.page {
+  width: 1000px;/* largura que foi colocada */
+  margin: 0 auto; /* margin(margem de fora cima e baixo não centraliza automatico) e padding(preenchimento) */
+  /* border: 1px solid red; */
+  padding-top: 65px;
+}
+
+nav {
+  display: flex;/*uma caixa ao redor da outra, posso usa pra colocar nas varias posiçoes  */
+  justify-content: space-between;/* justifica a direção de cada item(treine me e home, sobre e treinar) */
+  align-items: center; /* como colocou flex, mudou eixo principal, ai colocou no centro os dois itens */
+
+  margin-bottom: 55px; /* margem entre caixa debaixo */
+}
+
+ul {
+  display: flex;/*uma caixa ao lado da outra  */
+  gap: 48px; /* espaço entre cada item da lista */
+  list-style: none;
+  margin: 0;/* sem margem */
+  padding: 0;/* sem preenchimento */
+  font-family: 'Mulish', sans-serif;
+}
+
+a {
+  color: #1F1534;
+  text-decoration: none; /* tirou decoração da fonte, o sublinhar */
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+
+ul li a:hover {
+  font-weight: bold;/* sempre que passar em cima o botão fica com a fonte */
+  opacity: 1;
+}
+
+h1, ul {
+  font-family: 'Mulish', sans-serif;
+}
+
+main {
+ display: flex; /* deixa um do lado do outro */
+ align-items: center;
+ justify-content: space-between;/* cola um em cada margem */
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+
+  font-weight: normal; /* tirou negerito */
+
+  width: 490px; /* poderia ter feito com largura ou quebra de linha html */
+}
+
+h1 span {
+  color: #89C5CC;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+
+  margin: 40px 0; /* colocou 40 em cima e embaixo */
+}
+
+button {
+  color: white;
+  text-transform: uppercase;/* tranformou em maiuscula */
+  font-family: 'Open Sans', sans-serif;
+
+  background: #69B99D; /* cor do fundo da caixa */
+  border: 0;
+  padding: 14px 32px 15px;
+
+  display: flex; /* alinhamento centro */
+  align-items: center;/* quando coloco display flex preciso por esse posicionamento */
+  justify-content: center;/* quando coloco display flex preciso por esse posicionamento */
+  gap: 10px;/* espaço entre eles */
+
+  border-radius: 4px;
+
+  cursor: pointer; /* é a mãozinha que muda quando passa em cima */
+}
+
+button:hover {
+  background: #4ea788; 
+}
+
+
+footer {
+  font-size: 14px;
+  line-height: 28px; 
+  text-align: center;
+  margin-top: 80px; /* sempre arredondar */
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
